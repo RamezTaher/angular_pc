@@ -1,0 +1,25 @@
+<section class="section-about">
+  <app-title title="Outstanding Configuration for gamers"></app-title>
+
+  <div class="row">
+    <div class="col-1-of-2">
+      <app-paragraph
+        *ngFor="let parag of paragraphs"
+        [parag]="parag"
+      ></app-paragraph>
+
+      <app-button-text
+        bgColor="text"
+        text="Learn more &rarr;"
+      ></app-button-text>
+    </div>
+    <div class="col-1-of-2">
+      <div class="composition">
+        <app-composition
+          *ngFor="let compo of compositions"
+          [compo]="compo"
+        ></app-composition>
+      </div>
+    </div>
+  </div>
+</section>

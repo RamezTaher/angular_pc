@@ -1,0 +1,23 @@
+<section class="section-booking">
+  <div class="row">
+    <div class="book">
+      <div class="book__form">
+        <form action="#" class="form">
+          <app-title title="Create Account"></app-title>
+
+          <app-starting-item
+            *ngFor="let item of startingItems"
+            [item]="item"
+          ></app-starting-item>
+
+          <div class="form__group">
+            <app-button-text
+              text="Next step &rarr;"
+              bgColor="text"
+            ></app-button-text>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

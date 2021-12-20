@@ -1,0 +1,28 @@
+<div class="col-1-of-3">
+  <div class="card">
+    <div class="card__side card__side--front">
+      <div class="{{ cardClassF }}"></div>
+
+      <h4 class="card__heading"></h4>
+
+      <div class="card__details">
+        <ul>
+          <li>{{ card.detail.cpu }}</li>
+          <li>{{ card.detail.gpu }}</li>
+          <li>{{ card.detail.ram }}</li>
+          <li>{{ card.detail.hard }}</li>
+          <li>{{ card.detail.boitier }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="{{ cardClassB }}">
+      <div class="card__cta">
+        <div class="card__price-box">
+          <p class="card__price-only">Only</p>
+          <p class="card__price-value">TND {{ card.price }}</p>
+        </div>
+        <app-button text="Buy Now" bgColor="white"></app-button>
+      </div>
+    </div>
+  </div>
+</div>

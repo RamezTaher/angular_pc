@@ -1,0 +1,16 @@
+<section class="section-stories">
+  <div class="bg-video">
+    <video class="bg-video__content" autoplay muted loop>
+      <source src="assets/img/vid.mp4" type="video/mp4" />
+      Your browser is not supported!
+    </video>
+  </div>
+  <app-title title="WE MAKE PEOPLE GENUILY HAPPY"></app-title>
+
+  <app-testimonial
+    *ngFor="let testimonial of testimonials"
+    [testi]="testimonial"
+  ></app-testimonial>
+
+  <app-button-text bgColor="text"></app-button-text>
+</section>
