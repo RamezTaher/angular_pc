@@ -1,4 +1,4 @@
-import { Details } from './Details.modul';
+import { Details } from './Details';
 
 export interface Cards {
   id: number;
